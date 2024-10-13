@@ -1,0 +1,21 @@
+{% extends 'menu.html'%}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Продажа картин</title>
+</head>
+<body>
+    {{block.super}}
+    {% block content %}
+    <h1>Выберите картину</h1>
+    <ul>
+        {% for release in releases %}
+            <li>{{ release }}<button><a href="/basket">Выбрать</a></button></li>
+        {% endfor %}
+    </ul>
+    {% endblock %}
+    <button><a href="/main">Вернуться обратно</a></button>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Продажа картин</title>
+</head>
+<body>
+    <h1>Картины</h1>
+    <ul>
+        {% for release in releases %}
+            <li>{{ release }}<button><a href="/basket">Выбрать</a></button></li>
+        {% endfor %}
+    </ul>
+    <button><a href="/main">Вернуться обратно</a></button>
+</body>
+</html>
